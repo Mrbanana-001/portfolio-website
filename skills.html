@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Skills — Amulya Nepal's Portfolio" />
+  <title>Amulya Nepal — Skills</title>
+
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="skills.css" />
+
+  <!-- INTERNAL CSS -->
+  <style>
+    /* ── Internal: legend + intro layout ── */
+    .skills-intro-wrap {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .skills-intro-text {
+      max-width: 520px;
+    }
+
+    .legend {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--text-sub);
+      letter-spacing: 0.06em;
+    }
+
+    .ldot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+    }
+
+    .ldot-cyan   { background: var(--accent); box-shadow: 0 0 6px var(--accent); }
+    .ldot-purple { background: #a78bfa; }
+    .ldot-green  { background: var(--green); }
+
+    /* ── section spacer ── */
+    .section-gap { margin-top: 5rem; }
+
+    /* proficiency note */
+    .prof-note {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-sub);
+      margin-top: 1.5rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="about.html" class="nav-logo">amulya<span class="dot">.</span>np</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══ PAGE HERO ═══ -->
+    <section class="page-top" style="position:relative;overflow:hidden;">
+      <!-- INLINE CSS on blobs -->
+      <div class="blob" style="width:420px;height:420px;background:var(--accent);top:-180px;left:50%;transform:translateX(-50%);opacity:0.08;"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <span class="label au">What I Can Do</span>
+        <h1 class="au d1">Skills &amp; <em style="color:var(--accent);font-style:normal;">Projects</em></h1>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ═══ TECHNICAL SKILLS ═══ -->
+    <section class="section">
+      <div class="container">
+
+        <div class="skills-intro-wrap">
+          <div class="skills-intro-text">
+            <span class="label">Technical Skills</span>
+            <h2 style="margin-top:0.4rem;">My Toolkit</h2>
+            <p style="margin-top:0.75rem;">A mix of languages, tools, and platforms I've worked with — from game engines to data science.</p>
+          </div>
+          <div class="legend">
+            <div class="legend-item"><div class="ldot ldot-cyan"></div> Advanced</div>
+            <div class="legend-item"><div class="ldot ldot-purple"></div> Intermediate</div>
+            <div class="legend-item"><div class="ldot ldot-green"></div> Beginner</div>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Programming -->
+          <div class="skill-cat card">
+            <div class="cat-head">
+              <!-- INLINE CSS on category icon bg -->
+              <div class="cat-ico" style="background:rgba(0,212,255,0.1);color:var(--accent);">💻</div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-rows">
+              <div class="skill-row">
+                <div class="skill-meta"><span class="skill-name">Python</span><span class="skill-level">Intermediate</span></div>
+                <div class="bar-track"><div class="bar-fill purple w-75"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta"><span class="skill-name">C#</span><span class="skill-level">Intermediate</span></div>
+                <div class="bar-track"><div class="bar-fill purple w-68"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta"><span class="skill-name">HTML5</span><span class="skill-level">Advanced</span></div>
+                <div class="bar-track"><div class="bar-fill cyan w-90"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta"><span class="skill-name">CSS3</span><span class="skill-level">Advanced</span></div>
+                <div class="bar-track"><div class="bar-fill cyan w-82"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game Development -->
+          <div class="skill-cat card">
+            <div class="cat-head">
+              <div class="cat-ico" style="background:rgba(123,94,167,0.12);color:#a78bfa;">🎮</div>
+              <h3>Game Development</h3>
+            </div>
+            <div class="skill-rows">
+              <div class="skill-row">
+                <div class="skill-meta"><span class="skill-name">Unity Engine</span><span class="skill-level">Intermediate</span></div>
+                <div class="bar-track"><div class="bar-fill purple w-68"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta"><span class="skill-name">Game Mechanics Design</span><span class="skill-level">Intermediate</span></div>
+                <div class="bar-track"><div class="bar-fill purple w-60"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta"><span class="skill-name">Movement Systems</span><span class="skill-level">Intermediate</span></div>
+                <div class="bar-track"><div class="bar-fill purple w-65"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta"><span class="skill-name">Level / Map Design</span><span class="skill-level">Beginner</span></div>
+                <div class="bar-track"><div class="bar-fill green w-40"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-cat card">
+            <div class="cat-head">
+              <div class="cat-ico" style="background:rgba(57,211,83,0.1);color:var(--green);">🌐</div>
+              <h3>Web &amp; Data</h3>
+            </div>
+            <div class="skill-rows">
+              <div class="skill-row">
+                <div class="skill-meta"><span class="skill-name">Responsive Web Design</span><span class="skill-level">Intermediate</span></div>
+                <div class="bar-track"><div class="bar-fill green w-68"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta"><span class="skill-name">Data Analysis (Python)</span><span class="skill-level">Beginner</span></div>
+                <div class="bar-track"><div class="bar-fill green w-45"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta"><span class="skill-name">GitHub / Version Control</span><span class="skill-level">Beginner</span></div>
+                <div class="bar-track"><div class="bar-fill green w-40"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other -->
+          <div class="skill-cat card">
+            <div class="cat-head">
+              <div class="cat-ico" style="background:rgba(255,180,0,0.08);color:#f5a623;">🧠</div>
+              <h3>Mathematics &amp; Problem Solving</h3>
+            </div>
+            <div class="skill-rows">
+              <div class="skill-row">
+                <div class="skill-meta"><span class="skill-name">Logical Reasoning</span><span class="skill-level">Advanced</span></div>
+                <div class="bar-track"><div class="bar-fill cyan w-90"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta"><span class="skill-name">Mathematics</span><span class="skill-level">Advanced</span></div>
+                <div class="bar-track"><div class="bar-fill cyan w-82"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta"><span class="skill-name">Algorithmic Thinking</span><span class="skill-level">Intermediate</span></div>
+                <div class="bar-track"><div class="bar-fill purple w-68"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.skills-grid -->
+
+        <p class="prof-note">// Proficiency based on self-assessment and project experience.</p>
+
+        <!-- ── Soft Skills ── -->
+        <div class="section-gap">
+          <span class="label">People &amp; Communication</span>
+          <h2 style="margin-top:0.4rem;margin-bottom:0.5rem;">Soft Skills</h2>
+          <p>Skills that complement the technical side — developed through debate, workshops, and community work.</p>
+          <div class="soft-wrap">
+            <div class="soft-pill">🗣️ Public Speaking</div>
+            <div class="soft-pill">🤝 Communication</div>
+            <div class="soft-pill">🎯 Goal-Oriented Mindset</div>
+            <div class="soft-pill">🧩 Problem Solving</div>
+            <div class="soft-pill">📊 Presentation Skills</div>
+            <div class="soft-pill">🌱 Community Leadership</div>
+            <div class="soft-pill">⏱️ Time Management</div>
+            <div class="soft-pill">🖼️ Basic Digital Content Creation</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ═══ PROJECTS ═══ -->
+    <section class="section">
+      <div class="container">
+        <span class="label">What I've Built</span>
+        <h2 style="margin-top:0.4rem;margin-bottom:0.5rem;">Projects</h2>
+        <p>Real projects I've built — combining the technical skills above into working software.</p>
+
+        <div class="projects-grid">
+
+          <div class="proj-card card">
+            <p class="proj-label">🎮 Game Development · Unity</p>
+            <h3 class="proj-title">Forest of the Fallen</h3>
+            <p class="proj-desc">
+              A top-down action game developed in Unity using C#. The project focused on building
+              smooth movement systems, enemy mechanics, and cohesive level design — from a single
+              starting concept to a playable game experience.
+            </p>
+            <div class="proj-tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag tag-purple">Top-Down</span>
+              <span class="tag tag-green">Mechanics Design</span>
+            </div>
+          </div>
+
+          <div class="proj-card card">
+            <p class="proj-label">📈 Data Science · Python</p>
+            <h3 class="proj-title">Stock Prediction Project</h3>
+            <p class="proj-desc">
+              A Python-based project focused on analyzing historical stock data and applying
+              predictive models to forecast trends. Deepened understanding of data analysis,
+              pattern recognition, and practical Python programming.
+            </p>
+            <div class="proj-tags">
+              <span class="tag">Python</span>
+              <span class="tag tag-purple">Data Analysis</span>
+              <span class="tag tag-green">Prediction Model</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2082 Amulya Nepal &nbsp;—&nbsp; Built with HTML &amp; CSS</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="interests.html">Interests</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

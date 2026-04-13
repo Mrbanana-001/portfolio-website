@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interests — Amulya Nepal's Portfolio" />
+  <title>Amulya Nepal — Interests</title>
+
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="interests.css" />
+
+  <!-- INTERNAL CSS -->
+  <style>
+    /* ── Internal: page intro paragraph width limit ── */
+    .interests-intro {
+      max-width: 580px;
+      margin-bottom: 3.5rem;
+    }
+
+    /* hobby thumb gradient helpers */
+    .thumb-game    { background: linear-gradient(135deg, #0d1f14, #071a10); }
+    .thumb-code    { background: linear-gradient(135deg, #0a111e, #060c18); }
+    .thumb-math    { background: linear-gradient(135deg, #12100a, #0c0b06); }
+    .thumb-debate  { background: linear-gradient(135deg, #14080e, #0e040a); }
+    .thumb-music   { background: linear-gradient(135deg, #0d0a18, #060410); }
+    .thumb-nature  { background: linear-gradient(135deg, #071412, #03100d); }
+
+    /* accent stripe on featured card */
+    .hobby-card.featured {
+      border-color: rgba(0,212,255,0.25);
+      grid-column: span 2;
+    }
+
+    .hobby-card.featured .hobby-thumb {
+      height: 160px;
+    }
+
+    .hobby-card.featured .hobby-body {
+      padding: 1.5rem;
+    }
+
+    .hobby-card.featured .hobby-name {
+      font-size: 1.2rem;
+    }
+
+    .hobby-card.featured .hobby-desc {
+      font-size: 0.88rem;
+    }
+
+    /* hobby link */
+    .hobby-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: auto;
+      padding-top: 0.75rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      transition: gap var(--t) var(--ease);
+    }
+    .hobby-link:hover { gap: 0.6rem; }
+
+    @media (max-width: 860px) {
+      .hobby-card.featured { grid-column: span 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="about.html" class="nav-logo">amulya<span class="dot">.</span>np</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="interests.html" class="active">Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="page-top" style="position:relative;overflow:hidden;">
+      <!-- INLINE CSS blobs -->
+      <div class="blob" style="width:450px;height:450px;background:var(--accent-2);top:-150px;right:-80px;opacity:0.14;"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <span class="label au">Outside the Code</span>
+        <h1 class="au d1">Interests &amp; <em style="color:var(--accent);font-style:normal;">Hobbies</em></h1>
+        <p class="interests-intro au d2">
+          There's more to me than syntax and semicolons. Here's what keeps me curious,
+          energised, and growing — inside and outside the classroom.
+        </p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ═══ HOBBY CARDS ═══ -->
+    <section class="section">
+      <div class="container">
+        <span class="label">What I Love</span>
+        <h2 style="margin-top:0.4rem;margin-bottom:2.5rem;">My Passions</h2>
+
+        <div class="hobby-grid">
+
+          <!-- Featured: Game Dev -->
+          <div class="hobby-card card featured">
+            <div class="hobby-thumb thumb-game">
+              <span class="hobby-emoji">🎮</span>
+            </div>
+            <div class="hobby-body">
+              <!-- INLINE CSS: border-top accent on featured name -->
+              <p class="hobby-name" style="color:var(--accent);">Game Development</p>
+              <p class="hobby-desc">
+                Building games is where I feel most creative. I'm currently developing
+                <strong style="color:var(--text);">Forest of the Fallen</strong> — a top-down Unity game where
+                I design every mechanic, movement system, and enemy behaviour from scratch.
+                It's the perfect blend of art and engineering.
+              </p>
+              <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.75rem;">
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag tag-purple">Game Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Competitive Programming / Problem Solving -->
+          <div class="hobby-card card">
+            <div class="hobby-thumb thumb-code">
+              <span class="hobby-emoji">⌨️</span>
+            </div>
+            <div class="hobby-body">
+              <p class="hobby-name">Competitive Programming</p>
+              <p class="hobby-desc">I enjoy solving algorithmic challenges — the race against time and complexity is thrilling and keeps my logic sharp.</p>
+              <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.75rem;">
+                <span class="tag">Python</span>
+                <span class="tag tag-green">Algorithms</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mathematics -->
+          <div class="hobby-card card">
+            <div class="hobby-thumb thumb-math">
+              <span class="hobby-emoji">📐</span>
+            </div>
+            <div class="hobby-body">
+              <p class="hobby-name">Mathematics</p>
+              <p class="hobby-desc">
+                Math isn't just a subject — it's a way of thinking. I contributed to Nepal's first Maths Park,
+                which showed me how powerful numbers can be in the real world.
+              </p>
+            </div>
+          </div>
+
+          <!-- Debate -->
+          <div class="hobby-card card">
+            <div class="hobby-thumb thumb-debate">
+              <span class="hobby-emoji">🎙️</span>
+            </div>
+            <div class="hobby-body">
+              <p class="hobby-name">Debate &amp; Public Speaking</p>
+              <p class="hobby-desc">
+                I've competed at the national level in debate. Crafting arguments and delivering them confidently
+                under pressure is a skill I keep refining.
+              </p>
+              <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.75rem;">
+                <span class="tag tag-purple">National Level</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Music -->
+          <div class="hobby-card card">
+            <div class="hobby-thumb thumb-music">
+              <span class="hobby-emoji">🎵</span>
+            </div>
+            <div class="hobby-body">
+              <p class="hobby-name">Music</p>
+              <p class="hobby-desc">
+                Music is my constant background companion — lo-fi for coding sessions, orchestral tracks
+                for deep focus, and everything in between.
+              </p>
+            </div>
+          </div>
+
+          <!-- Environment / Community -->
+          <div class="hobby-card card">
+            <div class="hobby-thumb thumb-nature">
+              <span class="hobby-emoji">🌱</span>
+            </div>
+            <div class="hobby-body">
+              <p class="hobby-name">Environment &amp; Community</p>
+              <p class="hobby-desc">
+                I've volunteered in environmental awareness and education drives — believing that
+                technology and nature can coexist when people choose to care.
+              </p>
+              <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.75rem;">
+                <span class="tag tag-green">Community Service</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.hobby-grid -->
+
+        <!-- ── Currently Box ── -->
+        <div class="currently-box">
+          <span class="label">Right Now</span>
+          <h3 style="color:var(--text);margin-top:0.3rem;">Currently...</h3>
+          <div class="currently-grid">
+            <div class="cur-item">
+              <h4>🎮 Building</h4>
+              <p class="cur-main">Forest of the Fallen</p>
+              <p class="cur-sub">Unity top-down game</p>
+            </div>
+            <div class="cur-item">
+              <h4>📚 Learning</h4>
+              <p class="cur-main">Data Science with Python</p>
+              <p class="cur-sub">Pandas, NumPy basics</p>
+            </div>
+            <div class="cur-item">
+              <h4>🎯 Working on</h4>
+              <p class="cur-main">This Portfolio</p>
+              <p class="cur-sub">CS-4271 · Grade 11 · 2082</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2082 Amulya Nepal &nbsp;—&nbsp; Built with HTML &amp; CSS</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="interests.html">Interests</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

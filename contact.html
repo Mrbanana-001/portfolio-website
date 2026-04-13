@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact — Amulya Nepal's Portfolio" />
+  <title>Amulya Nepal — Contact</title>
+
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="contact.css" />
+
+  <!-- INTERNAL CSS -->
+  <style>
+    /* ── Internal: availability badge ── */
+    .avail-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.9rem;
+      background: rgba(57,211,83,0.08);
+      border: 1px solid rgba(57,211,83,0.2);
+      border-radius: 999px;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--green);
+      letter-spacing: 0.06em;
+      margin-bottom: 1.5rem;
+    }
+
+    .avail-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+
+    /* hero h1 small text below */
+    .contact-subhead {
+      font-size: 1rem;
+      color: var(--text-sub);
+      margin-top: 0.75rem;
+      max-width: 520px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="about.html" class="nav-logo">amulya<span class="dot">.</span>np</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="page-top" style="position:relative;overflow:hidden;">
+      <!-- INLINE CSS on glow blobs -->
+      <div class="blob" style="width:380px;height:380px;background:var(--accent);bottom:-120px;right:5%;opacity:0.09;"></div>
+      <div class="blob" style="width:300px;height:300px;background:var(--accent-2);top:-80px;left:-60px;opacity:0.1;"></div>
+
+      <div class="container" style="position:relative;z-index:1;">
+        <span class="label au">Let's Connect</span>
+        <h1 class="au d1">Get In <em style="color:var(--accent);font-style:normal;">Touch</em></h1>
+        <p class="contact-subhead au d2">
+          Whether it's a collaboration, a project idea, feedback on my work,
+          or just a friendly hello — I'd love to hear from you.
+        </p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ═══ MAIN CONTACT SECTION ═══ -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- ── LEFT: Info ── -->
+          <div>
+            <div class="avail-badge">
+              <div class="avail-dot"></div>
+              Open to opportunities
+            </div>
+
+            <span class="label">Contact Info</span>
+            <h2 style="margin-top:0.4rem;margin-bottom:1rem;font-size:1.8rem;">Let's Talk</h2>
+            <p class="contact-blurb">
+              Based in Kathmandu, Nepal. Feel free to reach out through the form
+              or directly via email — I reply within 24 hours.
+            </p>
+
+            <!-- Info List -->
+            <div class="info-list">
+              <div class="info-row">
+                <div class="info-ico">✉️</div>
+                <div class="info-detail">
+                  <h4>Email</h4>
+                  <a href="mailto:amulyanepal@gmail.com">amulyanepal@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-ico">📍</div>
+                <div class="info-detail">
+                  <h4>Location</h4>
+                  <p>Kathmandu, Nepal</p>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-ico">🎓</div>
+                <div class="info-detail">
+                  <h4>School</h4>
+                  <p>Kavya School — Grade 11</p>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-ico">⚡</div>
+                <div class="info-detail">
+                  <h4>Response Time</h4>
+                  <p>Usually within 24 hours</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Chips -->
+            <div class="social-bar">
+              <a href="https://github.com/amulyanepal" target="_blank" rel="noopener" class="soc-chip"
+                 style="border-color: rgba(0,212,255,0.2);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                GitHub
+              </a>
+              <a href="mailto:amulyanepal@gmail.com" class="soc-chip">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,12 2,6"/>
+                </svg>
+                Email
+              </a>
+            </div>
+          </div>
+
+          <!-- ── RIGHT: Form ── -->
+          <div>
+            <div class="form-card">
+              <span class="label">Send a Message</span>
+              <h3 style="color:var(--text);margin-top:0.3rem;margin-bottom:1.5rem;">Drop me a line</h3>
+
+              <!-- CONTACT FORM (Requirement) -->
+              <form id="contactForm" action="#" method="POST" onsubmit="submitForm(event)">
+
+                <div class="form-pair">
+                  <div class="f-group">
+                    <label for="fname" class="f-label">Full Name *</label>
+                    <input
+                      type="text"
+                      id="fname"
+                      name="name"
+                      class="f-input"
+                      placeholder="Your name"
+                      required
+                    />
+                  </div>
+                  <div class="f-group">
+                    <label for="femail" class="f-label">Email Address *</label>
+                    <input
+                      type="email"
+                      id="femail"
+                      name="email"
+                      class="f-input"
+                      placeholder="you@example.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="f-group">
+                  <label for="fsubject" class="f-label">Subject</label>
+                  <input
+                    type="text"
+                    id="fsubject"
+                    name="subject"
+                    class="f-input"
+                    placeholder="What's this about?"
+                  />
+                </div>
+
+                <div class="f-group">
+                  <label for="fmessage" class="f-label">Message *</label>
+                  <textarea
+                    id="fmessage"
+                    name="message"
+                    class="f-input f-textarea"
+                    placeholder="Hi Amulya, I wanted to reach out about..."
+                    rows="6"
+                    required
+                  ></textarea>
+                </div>
+
+                <!-- INLINE CSS on submit for extra spacing -->
+                <button type="submit" class="btn btn-primary submit-btn" style="margin-top:0.5rem;">
+                  Send Message &nbsp;→
+                </button>
+
+              </form>
+
+              <!-- Success State -->
+              <div class="form-success" id="successState">
+                <span class="success-ico">✅</span>
+                <h3>Message Sent!</h3>
+                <p>Thanks for reaching out. I'll get back to you within 24 hours.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2082 Amulya Nepal &nbsp;—&nbsp; Built with HTML &amp; CSS</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="interests.html">Interests</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JS only — no external libraries (requirement compliant) -->
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('successState').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

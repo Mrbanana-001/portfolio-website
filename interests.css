@@ -1,0 +1,117 @@
+/* =============================================
+   interests.css — Interests Page Styles
+   ============================================= */
+
+/* ── Hobby Masonry-style Grid ── */
+.hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* ── Hobby Card ── */
+.hobby-card.card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hobby-thumb {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hobby-emoji {
+  font-size: 3rem;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.hobby-card:hover .hobby-emoji {
+  transform: scale(1.15);
+}
+
+.hobby-body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hobby-name {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.hobby-desc {
+  font-size: 0.83rem;
+  color: var(--text-sub);
+  line-height: 1.65;
+}
+
+/* ── Currently Box ── */
+.currently-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 2.25rem;
+  margin-top: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.currently-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2), transparent);
+}
+
+.currently-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1.75rem;
+}
+
+.cur-item h4 {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--accent);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.cur-item .cur-main {
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.cur-item .cur-sub {
+  font-size: 0.78rem;
+  color: var(--text-sub);
+  font-family: var(--font-mono);
+}
+
+/* ── Responsive ── */
+@media (max-width: 860px) {
+  .hobby-grid { grid-template-columns: repeat(2, 1fr); }
+  .currently-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 540px) {
+  .hobby-grid { grid-template-columns: 1fr; }
+  .currently-grid { grid-template-columns: 1fr; }
+}
