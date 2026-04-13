@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Amulya Nepal — Student Developer, Game Developer, Future Tech Entrepreneur" />
+  <title>Amulya Nepal — About</title>
+
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="about.css" />
+
+  <!-- INTERNAL CSS -->
+  <style>
+    /* ── Internal: Hero section background grid lines ── */
+    .hero-section {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,212,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,212,255,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      z-index: 0;
+      mask-image: radial-gradient(ellipse 80% 80% at 50% 0%, black 40%, transparent 100%);
+    }
+
+    .section-header {
+      margin-bottom: 3rem;
+    }
+
+    .section-header h2 {
+      margin-top: 0.4rem;
+    }
+
+    /* Experience timeline */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      bottom: 8px;
+      width: 1px;
+      background: linear-gradient(to bottom, var(--accent), var(--accent-2), transparent);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 1.25rem 0 1.25rem 1.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .timeline-item:last-child {
+      border-bottom: none;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -4.5px;
+      top: 1.6rem;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    .timeline-role {
+      font-family: var(--font-head);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.2rem;
+    }
+
+    .timeline-org {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-desc {
+      font-size: 0.88rem;
+      color: var(--text-sub);
+    }
+
+    @media (max-width: 600px) {
+      .timeline { padding-left: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <!-- INLINE CSS on logo for custom letter-spacing tweak -->
+      <a href="about.html" class="nav-logo" style="letter-spacing: 0.02em;">amulya<span class="dot">.</span>np</a>
+      <ul class="nav-links">
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero-section page-top">
+      <!-- INLINE CSS on blobs -->
+      <div class="blob" style="width:500px;height:500px;background:var(--accent);top:-200px;right:-100px;"></div>
+      <div class="blob" style="width:400px;height:400px;background:var(--accent-2);bottom:-100px;left:-80px;"></div>
+
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="hero-grid">
+
+          <!-- Left: Text -->
+          <div>
+            <span class="label au">About Me</span>
+
+            <h1 class="au d1">
+              <span class="hero-name">Amulya Nepal</span><span class="hero-cursor"></span>
+            </h1>
+
+            <p class="hero-tagline au d2">Student Developer &nbsp;|&nbsp; Future Tech Entrepreneur &nbsp;|&nbsp; Game Developer</p>
+
+            <p class="hero-bio au d3">
+              I'm a 16-year-old student from Kathmandu, Nepal with a strong interest in
+              technology, programming, and innovation. I enjoy building projects that combine
+              creativity and logic — especially in game development and data-driven applications.
+              Competition drives me to improve every day.
+            </p>
+
+            <blockquote class="quote-block au d4">
+              <p>"The best way to predict the future is to build it."</p>
+            </blockquote>
+
+            <div class="hero-actions au d5">
+              <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+              <a href="skills.html" class="btn btn-ghost">View Skills →</a>
+            </div>
+          </div>
+
+          <!-- Right: Profile Card -->
+          <div class="au d2">
+            <div class="profile-card">
+              <div class="avatar-wrap">
+                <div class="avatar-inner">AN</div>
+              </div>
+              <p class="profile-name">Amulya Nepal</p>
+              <p class="profile-role">Grade 11 &nbsp;·&nbsp; Kavya School</p>
+
+              <div class="stat-row">
+                <div class="stat-box">
+                  <span class="stat-num">3.85</span>
+                  <span class="stat-lbl">SEE GPA</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-num">2+</span>
+                  <span class="stat-lbl">Projects</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-num">16</span>
+                  <span class="stat-lbl">Years Old</span>
+                </div>
+              </div>
+
+              <div class="profile-socials">
+                <!-- GitHub -->
+                <a href="https://github.com/amulyanepal" target="_blank" rel="noopener" class="soc-btn" aria-label="GitHub">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                </a>
+                <!-- Email -->
+                <a href="mailto:amulyanepal@gmail.com" class="soc-btn" aria-label="Email">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,12 2,6"/>
+                  </svg>
+                </a>
+                <!-- Location pin -->
+                <a href="#" class="soc-btn" aria-label="Location">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ═══ STORY ═══ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">My Story</span>
+          <h2>Who I Am</h2>
+        </div>
+
+        <div class="about-cards">
+          <div class="about-card card">
+            <span class="ac-icon">🎓</span>
+            <h3>Education</h3>
+            <p>Grade 11 at Kavya School, Kathmandu. Achieved a 3.85 GPA in SEE — built on dedication and consistency across all subjects.</p>
+          </div>
+          <div class="about-card card">
+            <span class="ac-icon">⚡</span>
+            <h3>Drive</h3>
+            <p>Competition motivates me. I push myself in academics, debate, and coding challenges because I believe high standards build great habits.</p>
+          </div>
+          <div class="about-card card">
+            <span class="ac-icon">🚀</span>
+            <h3>Vision</h3>
+            <p>I aspire to become a tech entrepreneur — building products that solve real problems. Game development is where I sharpen my craft.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ═══ ACHIEVEMENTS ═══ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">Recognition</span>
+          <h2>Achievements</h2>
+        </div>
+
+        <div class="achievement-list">
+          <div class="ach-item">
+            <span class="ach-icon">🏅</span>
+            <div class="ach-text">
+              <strong>SEE GPA: 3.85</strong>
+              Excellent academic performance in School Leaving Examination — a strong foundation for future technical studies.
+            </div>
+          </div>
+          <div class="ach-item">
+            <span class="ach-icon">🎙️</span>
+            <div class="ach-text">
+              <strong>National-Level Debate Competition</strong>
+              Participated and represented the school at a national level, demonstrating strong public speaking and argumentation skills.
+            </div>
+          </div>
+          <div class="ach-item">
+            <span class="ach-icon">📐</span>
+            <div class="ach-text">
+              <strong>Nepal's First Maths Park</strong>
+              Contributed to the development of Nepal's pioneering Maths Park — a creative intersection of education and public space.
+            </div>
+          </div>
+          <div class="ach-item">
+            <span class="ach-icon">🔬</span>
+            <div class="ach-text">
+              <strong>Workshop Facilitator — Velor Institute of Science &amp; McMaster University</strong>
+              Conducted a workshop representing two prestigious institutions, sharing knowledge with peers and community members.
+            </div>
+          </div>
+          <div class="ach-item">
+            <span class="ach-icon">🌱</span>
+            <div class="ach-text">
+              <strong>Community Service — Environmental Awareness</strong>
+              Active participation in environmental education and awareness campaigns across the community.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ═══ EXPERIENCE ═══ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">Experience</span>
+          <h2>What I've Done</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <p class="timeline-role">Workshop Facilitator</p>
+            <p class="timeline-org">Velor Institute of Science &amp; McMaster University</p>
+            <p class="timeline-desc">Represented two institutions to conduct an educational workshop, developing communication and leadership skills in a formal academic setting.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-role">Contributor — Nepal's First Maths Park</p>
+            <p class="timeline-org">Kathmandu, Nepal</p>
+            <p class="timeline-desc">Worked on an innovative national project that blends mathematics education with interactive public installations.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-role">National Debate Competitor</p>
+            <p class="timeline-org">National Level Competition</p>
+            <p class="timeline-desc">Competed at a national level, researching complex topics and presenting structured arguments under pressure.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-role">Community Educator</p>
+            <p class="timeline-org">Environmental Awareness Programs</p>
+            <p class="timeline-desc">Volunteered in community service focused on environmental awareness — combining education with civic responsibility.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2082 Amulya Nepal &nbsp;—&nbsp; Built with HTML &amp; CSS</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="interests.html">Interests</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
